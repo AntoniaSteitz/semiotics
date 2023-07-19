@@ -1,0 +1,29 @@
+.body {
+  padding-left: 30px;
+  padding-right: 30px
+}
+
+.video_container {
+  position: relative;
+}
+
+
+.home_video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.intro {
+  background-color: $orange;
+  padding: 50px;
+
+  .intro_text {
+    h1 {
+        font-family: $body-font;
+        font-size: 70px;
+        letter-spacing: -3.16px;
+    }
+  }
+}

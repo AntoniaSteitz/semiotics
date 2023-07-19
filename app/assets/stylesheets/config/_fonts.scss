@@ -1,13 +1,53 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
-// Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 @font-face {
-  font-family: "Surt";
-  src: font-url('Surt-UltraBoldExtended.woff') format('woff'),
+  font-family: 'Surt Extended';
+  font-weight: 800;
+  src: font-url('app/assets/fonts/Surt-UltraBoldExtended.woff') format('woff'),
 }
-$body-font: "Surt";
+
+// Define fonts for body and headers
+$body-font: "Surt Extended";
+
+
+
+
+/* Headlines */
+h1 {
+  font-family: $body-font;
+  font-size: 79px;
+  letter-spacing: -3.16px;
+}
+
+h3 {
+  font-family: $body-font;
+  font-size: 60px;
+  letter-spacing: -0.3px;
+}
+
+h4 {
+  font-family: $body-font;
+  font-size: 34px;
+  letter-spacing: 0.085px;
+}
+
+h5 {
+  font-family: $body-font;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+h6 {
+  font-family: $body-font;
+  font-size: 20px;
+  letter-spacing: 0.03px;
+}
+
+p {
+  font-family: $body-font;
+  font-size: 16px;
+  letter-spacing: 0.024px;
+}
