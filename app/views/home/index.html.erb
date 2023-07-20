@@ -16,7 +16,7 @@
   </div>
 
   <div class="right-section">
-    <h3>What is <br> s-e-m-i-o-t-i-c-s?</h3>
+    <h2>What is <br> s-e-m-i-o-t-i-c-s?</h2>
     <p>S-E-M-I-O-T-I-C-S comes from the term semiology.
     A science that focuses on the sign processes of cultures and nature.
     When interpreting charts, we interpret and react to the signs and arrangements too.
@@ -29,5 +29,21 @@
     <p>Here we separate into themes and concepts, that we will look at together through the
     lense of all three concepts, human design, astrology and tarot. This gives a broader context
     and allows intuitive impulses to float into our conversation.</p>
+  </div>
+</div>
+
+
+<!-- Topic Carousel section -->
+<div class="carousel-container">
+  <h2>Start here <i class="bi bi-arrow-right"></i> <br>What area do you want to deep dive in?</h2>
+  <div class="carousel">
+    <div class="card">
+      <% @topics.each do |topic| %>
+        <div class="card">
+          <div class="front"><%= topic.name %></div>
+          <div class="back"><%= topic.summary %></div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
