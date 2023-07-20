@@ -15,15 +15,43 @@
   object-fit: cover;
 }
 
-.intro {
+.intro_container {
   background-color: $orange;
   padding: 50px;
 
-  .intro_text {
-    h1 {
-        font-family: $body-font;
-        font-size: 70px;
-        letter-spacing: -3.16px;
-    }
+  h1 {
+    font-family: $body-font;
+    font-size: 70px;
+    letter-spacing: -3.16px;
   }
+}
+
+
+.profile_container {
+  display: flex;
+  background-color: $green;
+}
+
+.left-section, .right-section {
+  width: 50%;
+}
+
+/* Styling for the textarea */
+.right-section {
+  padding: 50px;
+
+  h3 {
+    font-family: $body-font;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Styling for the picture */
+.left-section img {
+  max-width: 100%;
+  height: auto;
 }
