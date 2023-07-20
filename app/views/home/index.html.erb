@@ -35,15 +35,15 @@
 
 <!-- Topic Carousel section -->
 <div class="carousel-container">
-  <h2>Start here <i class="bi bi-arrow-right"></i> <br>What area do you want to deep dive in?</h2>
-  <div class="carousel">
-    <div class="card">
-      <% @topics.each do |topic| %>
-        <div class="card">
-          <div class="front"><%= topic.name %></div>
-          <div class="back"><%= topic.summary %></div>
-        </div>
-      <% end %>
-    </div>
+  <h2>Start here</h2>
+  <span class="bi bi-arrow-right"></span>
+  <h3>What area do you want to deep dive in?</h3>
+  <div class="cards">
+    <% @topics.each do |topic| %>
+      <div class="card">
+        <div class="front"><%= topic.name %></div>
+        <div class="back"><%= topic.summary %></div>
+      </div>
+    <% end %>
   </div>
 </div>

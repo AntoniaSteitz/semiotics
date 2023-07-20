@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-  # Form for the booking of a new reading
-  @reading = Reading.new
-  @topics = Topic.all
+  def index
+    @topics = Topic.all
+    @reading = Reading.new
+  end
 end

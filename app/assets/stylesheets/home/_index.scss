@@ -3,6 +3,12 @@
   padding-right: 30px
 }
 
+
+
+
+
+
+// --> Video Section
 .video_container {
   position: relative;
 }
@@ -15,6 +21,12 @@
   object-fit: cover;
 }
 
+
+
+
+
+
+// --> Intro Section
 .intro_container {
   background-color: $orange;
   padding: 50px;
@@ -27,6 +39,11 @@
 }
 
 
+
+
+
+
+// --> Profile Section
 .profile_container {
   display: flex;
   background-color: $green;
@@ -36,7 +53,7 @@
   width: 50%;
 }
 
-/* Styling for the textarea */
+// Styling for Textarea
 .right-section {
   padding: 50px;
 
@@ -50,8 +67,77 @@
   }
 }
 
-/* Styling for the picture */
+// Styling for Picture
 .left-section img {
   max-width: 100%;
   height: auto;
+}
+
+
+
+
+
+
+// --> Topic Carousel section
+.carousel-container {
+  padding: 20px;
+  overflow-x: auto; /* This is for the horizontal scrolling */
+
+  h2 {
+    font-family: $body-font;
+    color: $orange;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-family: $body-font;
+    color: $orange;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  scroll-snap-type: x mandatory; /* Enable snapping to each card */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent cards from wrapping to a new line */
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  perspective: 1000px;
+  scroll-snap-align: start; /* Snap each card to the start of the container */
+}
+
+.front,
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.front {
+  background-color: #f0f0f0;
+}
+
+.back {
+  background-color: #fff;
+  transform: rotateY(180deg);
 }
