@@ -52,3 +52,98 @@
     <% end %>
   </div>
 </div>
+
+
+
+<!-- Booking form section -->
+<section class="booking-section">
+  <h2>Ready to book your reading?</h2>
+
+  <div class="booking-form">
+    <div class="left-booking">
+      <!-- Choose your topic -->
+      <div class="form-topics">
+        <h3>Choose your topic</h3>
+        <p>Select one of the following options:</p>
+        <ul class="topics">
+          <% @topics.each do |topic| %>
+            <li>
+              <label>
+                <%= radio_button_tag :topic, topic.id %>
+                <%= topic.name %>
+              </label>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <!-- How deep should we go? -->
+      <div class="form-length">
+        <h3>How deep should we go?</h3>
+        <p>
+          The lengths and depth of your reading define the price.
+          <br>
+          If you’d like to have a deep dive, we will look at your human design and astrology chart and discuss patterns that most likely affect this area in your life the most.
+          <br>
+          With one specific theme we would look at one pattern you already discovered in yourself and look at ways and skills that you have to give specific advice regarding that pattern.
+          <br>
+          With one question, I will use tarot to get some quick insight.
+        </p>
+        <ul>
+          <li><label><%= radio_button_tag :depth, 'Deep Dive' %>Deep Dive</label></li>
+          <li><label><%= radio_button_tag :depth, 'Specific Theme' %>Specific Theme</label></li>
+          <li><label><%= radio_button_tag :depth, 'One Question' %>One Question</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-booking">
+    <!-- Personal Information -->
+      <h3>Personal Information</h3>
+      <div class="personal-information">
+        <div class="contact">
+          <div class="input-firstname">
+            <label for="customer_name">Name</label>
+            <%= text_field_tag :customer_name, nil, required: true %>
+          </div>
+          <div class="input-email">
+            <label for="customer_email">Email</label>
+            <%= email_field_tag :customer_email, nil, required: true %>
+          </div>
+        </div>
+        <div class="input-wishes">
+          <label for="specific_wishes">Specific Wishes</label>
+          <%= text_area_tag :specific_wishes %>
+        </div>
+      </div>
+
+      <!-- Astrological Background -->
+      <h3>Astrological Background</h3>
+      <p>Give us some more insight into your astrological background:</p>
+      <div class="dates">
+        <div class="birth-details">
+          <div class="input-birthday">
+            <label for="birthday">Birthday</label>
+            <%= date_field_tag :birthday, nil, required: true %>
+          </div>
+          <div class="input-birthtime">
+            <label for="birthtime">Birthtime</label>
+            <%= time_field_tag :birthtime, nil, required: true %>
+          </div>
+          <div class="input-birthplace">
+            <label for="birthplace">Birthplace</label>
+            <%= text_field_tag :birthplace, nil, required: true %>
+          </div>
+        </div>
+
+        <!-- Calendar to choose the date -->
+        <div class="calendar">
+          <!-- Add a calendar component or a date picker for choosing the date -->
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <%# <%= button_to 'Send Booking Request', bookings_path, method: :post, class: 'submit-button' %> %>
+    </div>
+  </div>
+</section>
