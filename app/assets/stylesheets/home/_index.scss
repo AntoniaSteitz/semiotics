@@ -141,3 +141,22 @@
   background-color: #fff;
   transform: rotateY(180deg);
 }
+
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.bi-arrow-right {
+  color: $orange;
+}
+
+.header h2 {
+  margin-right: 10px;
+}
+
+.header svg {
+  margin-top: 10px;
+  display: inline;
+}
