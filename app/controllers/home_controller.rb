@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
+    # For access to all offered topics
     @topics = Topic.all
-    @reading = Reading.new
   end
 end

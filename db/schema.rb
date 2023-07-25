@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_20_194814) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_25_143651) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,6 +33,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_20_194814) do
     t.date "birthday"
     t.time "birthtime"
     t.string "birthplace"
+    t.string "name"
+    t.datetime "start_time"
+    t.datetime "end_time"
   end
 
   create_table "topics", force: :cascade do |t|
@@ -41,4 +44,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_20_194814) do
     t.datetime "updated_at", null: false
     t.text "summary"
   end
+
 end

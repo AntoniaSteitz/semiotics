@@ -62,9 +62,9 @@
   <div class="booking-form">
     <div class="left-booking">
       <!-- Choose your topic -->
+      <h3>Choose your topic</h3>
+      <p>Select one of the following options:</p>
       <div class="form-topics">
-        <h3>Choose your topic</h3>
-        <p>Select one of the following options:</p>
         <ul class="topics">
           <% @topics.each do |topic| %>
             <li>
@@ -138,12 +138,19 @@
 
         <!-- Calendar to choose the date -->
         <div class="calendar">
-          <!-- Add a calendar component or a date picker for choosing the date -->
+          <%= month_calendar do |date, posts| %>
+            <%= date %>
+            <% posts.each do |post| %>
+              <div>
+                <p><%= post.challenge %></p>
+              </div>
+            <% end %>
+          <% end %>
         </div>
       </div>
+    </div>
 
       <!-- Submit button -->
-      <%# <%= button_to 'Send Booking Request', bookings_path, method: :post, class: 'submit-button' %> %>
-    </div>
+      <%# <%= button_to 'Send Booking Request', bookings_path, method: :post, class: 'submit-button' %>
   </div>
 </section>

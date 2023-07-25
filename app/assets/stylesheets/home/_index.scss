@@ -218,6 +218,21 @@
         .contact .input-wishes {
           width:50%;
         }
+
+        input {
+          border-radius: 50px;
+          background: #ffe1ee;
+          border: 0px;
+          margin-bottom: 10px;
+        }
+
+        textarea {
+          border-radius: 15px;
+          background: #ffe1ee;
+          border: 0px;
+          margin-bottom: 10px;
+          height: 90px
+        }
       }
 
       .dates {
