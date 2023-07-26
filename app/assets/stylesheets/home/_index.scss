@@ -30,6 +30,7 @@
 .intro_container {
   background-color: $orange;
   padding: 50px;
+  width: 100%;
 
   h1 {
     font-family: $body-font;
@@ -45,6 +46,7 @@
 
 // --> Profile Section
 .profile_container {
+  width: 100%;
   display: flex;
   background-color: $green;
 }
@@ -169,6 +171,7 @@
   background-color: $orange;
   padding-right: 50px;
   padding-left: 50px;
+  width: 100%;
 
   h2 {
     font-family: $body-font;
@@ -213,7 +216,7 @@
         gap: 10px;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
 
         .contact .input-wishes {
           width:50%;
@@ -221,17 +224,21 @@
 
         input {
           border-radius: 50px;
-          background: #ffe1ee;
+          background-color: $background;
+          color: $green;
           border: 0px;
           margin-bottom: 10px;
+          padding-left: 10px;
         }
 
         textarea {
           border-radius: 15px;
-          background: #ffe1ee;
+          background-color: $background;
           border: 0px;
           margin-bottom: 10px;
-          height: 90px
+          height: 90px;
+          max-width: 100%;
+          padding-left: 10px;
         }
       }
 
@@ -242,9 +249,19 @@
         gap: 10px;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 15px;
 
         .birth-details .calendar{
           width:50%;
+        }
+
+        input {
+          border-radius: 50px;
+          background-color: $background;
+          color: $green;
+          border: 0px;
+          margin-bottom: 10px;
+          padding-left: 10px;
         }
       }
     }

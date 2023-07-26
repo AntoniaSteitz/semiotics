@@ -124,11 +124,11 @@
         <div class="birth-details">
           <div class="input-birthday">
             <label for="birthday">Birthday</label>
-            <%= date_field_tag :birthday, nil, required: true %>
+            <%= text_field_tag :birthday, nil, required: true, placeholder: "YYYY-MM-DD"%>
           </div>
           <div class="input-birthtime">
             <label for="birthtime">Birthtime</label>
-            <%= time_field_tag :birthtime, nil, required: true %>
+            <%= text_field_tag :birthtime, nil, required: true, placeholder: "HH:MM" %>
           </div>
           <div class="input-birthplace">
             <label for="birthplace">Birthplace</label>
@@ -140,11 +140,6 @@
         <div class="calendar">
           <%= month_calendar do |date, posts| %>
             <%= date %>
-            <% posts.each do |post| %>
-              <div>
-                <p><%= post.challenge %></p>
-              </div>
-            <% end %>
           <% end %>
         </div>
       </div>
