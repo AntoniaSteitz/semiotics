@@ -61,32 +61,25 @@
   .prev-month {
     color: black;
     background-color: rgb(234, 233, 233);
-    ;
+    margin-top: 5px;
+    padding: 4px;
   }
+
   .next-month {
     color: black;
     background-color: rgb(234, 233, 233);
-    ;
   }
   .current-month {}
 
   .has-events {}
+
 }
 
-
-
-// Button Design for Calendar
 .btn-calendar {
-  width: 60pt;
-  padding: 5px;
   font-size: 14pt;
-  font-weight: lighter;
-  margin-left: 0pt;
-  margin-right: 0pt;
-  border: none;
 
   &:active {
-    background-color: $background;
+    background-color: $orange;
     border: none;
   }
 }

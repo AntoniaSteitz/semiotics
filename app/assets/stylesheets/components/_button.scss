@@ -1,0 +1,8 @@
+.btn-calendar {
+  font-size: 14pt;
+
+  &:active {
+    background-color: $orange;
+    border: none;
+  }
+}

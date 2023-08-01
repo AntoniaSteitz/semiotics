@@ -252,7 +252,7 @@
         margin-bottom: 15px;
 
         .birth-details .calendar{
-          width:50%;
+          width: 50%;
         }
 
         input {
@@ -262,6 +262,17 @@
           border: 0px;
           margin-bottom: 10px;
           padding-left: 10px;
+        }
+
+        .calendar {
+          border-radius: 15px;
+          background-color: $green;
+          margin-bottom: 5px;
+          width: 100%;
+        }
+
+        h6 {
+          margin-bottom: 0.17rem;
         }
       }
     }

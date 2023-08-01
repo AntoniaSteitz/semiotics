@@ -137,13 +137,15 @@
         </div>
 
         <!-- Calendar to choose the date -->
-        <div class="calendar">
-          <%= month_calendar do |date, posts| %>
-            <%= date %>
-          <% end %>
+        <div class="calendar-dates">
+          <h6>Pick a date for your appointment</h6>
+          <div class="calendar">
+              <%= month_calendar do |date, posts| %>
+                <%= date %>
+              <% end %>
+          </div>
         </div>
       </div>
-    </div>
 
       <!-- Submit button -->
       <%# <%= button_to 'Send Booking Request', bookings_path, method: :post, class: 'submit-button' %>
